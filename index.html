@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Portfolio</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Neon background styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #fff;
+            background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+            background-size: 300% 300%;
+            animation: neon-bg 10s ease infinite;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes neon-bg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #fff;
+        }
+
+        header p {
+            font-size: 1.4rem;
+            color: #ddd;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            border: 2px solid #00ffcc;
+            box-shadow: 0 0 20px #00ffcc;
+            object-fit: cover;
+        }
+
+        .section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 10px #00ffcc;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #ff99cc, 0 0 20px #ff99cc;
+            color: #fff;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            color: #ddd;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px #00ffcc;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.8);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 1rem;
+            color: #ddd;
+            padding: 20px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Victor Portfolio</h1>
+        <img src="IMG-20250131-WA0005.jpg" alt="My Dp" class="profile-image">
+        <p>Welcome to my journey in cybersecurity</p>
+    </header>
+
+    <section class="section">
+        <h2>About Me</h2>
+        <p>Hi, My name is Victor Aiyedun Isaac, a cybersecurity student dedicated to making the digital world a safer place. My journey into cybersecurity is fueled by my curiosity for technology and my drive to combat cyber threats.</p>
+        <p>Outside of cybersecurity, I enjoy exploring emerging technologies, coding, and mentoring others on cybersecurity best practices.</p>
+    </section>
+
+    <section class="section">
+        <h2>My Area of Specialization</h2>
+        <p>I specialize in the following areas:</p>
+        <ul style="margin-left: 20px; list-style-type: square; color: #00ffcc;">
+            <li>Cloud computing</li>
+            <li>Network Security</li>
+            <li>Endpoint security</li>
+            <li>cybersecurity engineer</li>
+            <li>intrusion detection system</li>
+        </ul>
+        <p>My focus is to develop solutions that prevent cyber attacks, secure critical systems, and protect sensitive information.</p>
+    </section>
+
+    <section class="section">
+        <h2>Why I Study Cybersecurity</h2>
+        <p>
+            Career Advancement
+        </p>
+        <p>
+            protecting people and organizations
+        </p>
+        <p>staying ahead of threats</p>
+        <p>researc and development </p>
+    </section>
+
+    <section class="gallery">
+        <h2>Image Gallery</h2>
+        <img src="OIP.jpg" alt="Project 1">
+        <img src="R.png" alt="Project 2">
+        <img src="R (1).jpg" alt="Project 3">
+        <img src="R 2.png" alt="Project 4">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mary</p>
+
+        <section id="contact">
+            <h2>contact me</h2>
+            <form id="contactform">
+                <label for="name">name:</label>
+        
+                <input type="text" id="name"
+                name="name" required>
+        
+                <label for="email">email:</label>
+        
+                <input type="email" id="email"
+                name="email" required>
+        
+                <label
+                for="message">Message:</label>
+                <textarea id="message"
+                name="message" required>
+            </textarea>
+        
+            <button type="submit">send</button>
+            </form>
+          </section>
+          <!-- footer -->
+           <footer>
+            <p>&copy;2025 Victor</p>
+        
+
+    </footer>
+</body>
+</html>
